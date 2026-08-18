@@ -1,0 +1,49 @@
+2026-08-16 21:36:15,025 Worker b51c6739a5cb43549a9cc43f4ee37096: started with PID 12580, version 2.6.1
+2026-08-16 21:36:15,026 Worker b51c6739a5cb43549a9cc43f4ee37096: subscribing to channel rq:pubsub:b51c6739a5cb43549a9cc43f4ee37096
+2026-08-16 21:36:15,029 *** Listening on workspaces-frappe_case_management-frappe-bench:short, workspaces-frappe_case_management-frappe-bench:default, workspaces-frappe_case_management-frappe-bench:long...
+2026-08-16 21:36:15,030 Worker b51c6739a5cb43549a9cc43f4ee37096: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:short
+2026-08-16 21:36:15,041 Worker b51c6739a5cb43549a9cc43f4ee37096: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:default
+2026-08-16 21:36:15,046 Worker b51c6739a5cb43549a9cc43f4ee37096: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:long
+2026-08-16 21:39:18,866 Worker b51c6739a5cb43549a9cc43f4ee37096 [PID 12580]: warm shut down requested
+2026-08-16 21:39:18,900 Worker b51c6739a5cb43549a9cc43f4ee37096: unsubscribing from channel rq:pubsub:b51c6739a5cb43549a9cc43f4ee37096
+2026-08-16 21:39:32,692 Worker 04080551c7a34cfd9240e9107ef599f9: started with PID 14507, version 2.6.1
+2026-08-16 21:39:32,692 Worker 04080551c7a34cfd9240e9107ef599f9: subscribing to channel rq:pubsub:04080551c7a34cfd9240e9107ef599f9
+2026-08-16 21:39:32,695 *** Listening on workspaces-frappe_case_management-frappe-bench:short, workspaces-frappe_case_management-frappe-bench:default, workspaces-frappe_case_management-frappe-bench:long...
+2026-08-16 21:39:32,696 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:short
+2026-08-16 21:39:32,700 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:default
+2026-08-16 21:39:32,708 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:long
+2026-08-16 21:53:02,765 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:short
+2026-08-16 21:53:02,767 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:default
+2026-08-16 21:53:02,769 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:long
+2026-08-16 22:06:32,854 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:short
+2026-08-16 22:06:32,859 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:default
+2026-08-16 22:06:32,861 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:long
+2026-08-16 22:20:02,970 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:short
+2026-08-16 22:20:02,972 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:default
+2026-08-16 22:20:02,973 Worker 04080551c7a34cfd9240e9107ef599f9: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:long
+2026-08-16 22:22:12,970 Worker 04080551c7a34cfd9240e9107ef599f9 [PID 14507]: warm shut down requested
+2026-08-16 22:22:12,983 Worker 04080551c7a34cfd9240e9107ef599f9: unsubscribing from channel rq:pubsub:04080551c7a34cfd9240e9107ef599f9
+2026-08-18 20:49:55,984 Worker b09e92d37623494f82f69c54e9b6cff7: started with PID 4502, version 2.6.1
+2026-08-18 20:49:55,986 Worker b09e92d37623494f82f69c54e9b6cff7: subscribing to channel rq:pubsub:b09e92d37623494f82f69c54e9b6cff7
+2026-08-18 20:49:55,998 *** Listening on workspaces-frappe_case_management-frappe-bench:short, workspaces-frappe_case_management-frappe-bench:default, workspaces-frappe_case_management-frappe-bench:long...
+2026-08-18 20:49:56,001 Worker b09e92d37623494f82f69c54e9b6cff7: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:short
+2026-08-18 20:49:56,003 Worker b09e92d37623494f82f69c54e9b6cff7: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:default
+2026-08-18 20:49:56,006 Worker b09e92d37623494f82f69c54e9b6cff7: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:long
+2026-08-18 20:51:27,036 Worker b09e92d37623494f82f69c54e9b6cff7 [PID 4502]: warm shut down requested
+2026-08-18 20:51:27,070 Worker b09e92d37623494f82f69c54e9b6cff7: unsubscribing from channel rq:pubsub:b09e92d37623494f82f69c54e9b6cff7
+2026-08-18 20:56:35,699 Worker b83f5688ba404d6b9aa4fe171c4183f4: started with PID 7667, version 2.6.1
+2026-08-18 20:56:35,701 Worker b83f5688ba404d6b9aa4fe171c4183f4: subscribing to channel rq:pubsub:b83f5688ba404d6b9aa4fe171c4183f4
+2026-08-18 20:56:35,723 *** Listening on workspaces-frappe_case_management-frappe-bench:short, workspaces-frappe_case_management-frappe-bench:default, workspaces-frappe_case_management-frappe-bench:long...
+2026-08-18 20:56:35,729 Worker b83f5688ba404d6b9aa4fe171c4183f4: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:short
+2026-08-18 20:56:35,736 Worker b83f5688ba404d6b9aa4fe171c4183f4: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:default
+2026-08-18 20:56:35,739 Worker b83f5688ba404d6b9aa4fe171c4183f4: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:long
+2026-08-18 21:01:24,956 Worker b83f5688ba404d6b9aa4fe171c4183f4 [PID 7667]: warm shut down requested
+2026-08-18 21:01:24,978 Worker b83f5688ba404d6b9aa4fe171c4183f4: unsubscribing from channel rq:pubsub:b83f5688ba404d6b9aa4fe171c4183f4
+2026-08-18 21:06:26,000 Worker fa56f37814034777b5d67849908223b3: started with PID 11910, version 2.6.1
+2026-08-18 21:06:26,000 Worker fa56f37814034777b5d67849908223b3: subscribing to channel rq:pubsub:fa56f37814034777b5d67849908223b3
+2026-08-18 21:06:26,002 *** Listening on workspaces-frappe_case_management-frappe-bench:short, workspaces-frappe_case_management-frappe-bench:default, workspaces-frappe_case_management-frappe-bench:long...
+2026-08-18 21:06:26,003 Worker fa56f37814034777b5d67849908223b3: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:short
+2026-08-18 21:06:26,005 Worker fa56f37814034777b5d67849908223b3: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:default
+2026-08-18 21:06:26,008 Worker fa56f37814034777b5d67849908223b3: cleaning registries for queue: workspaces-frappe_case_management-frappe-bench:long
+2026-08-18 21:14:17,030 Worker fa56f37814034777b5d67849908223b3 [PID 11910]: warm shut down requested
+2026-08-18 21:14:17,053 Worker fa56f37814034777b5d67849908223b3: unsubscribing from channel rq:pubsub:fa56f37814034777b5d67849908223b3

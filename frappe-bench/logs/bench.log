@@ -1,0 +1,57 @@
+2026-08-16 21:19:46,821 DEBUG cd frappe-bench && uv venv env --seed --python python3
+2026-08-16 21:19:47,726 LOG Getting frappe
+2026-08-16 21:19:47,726 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2026-08-16 21:19:52,348 LOG Installing frappe
+2026-08-16 21:19:52,351 DEBUG cd /workspaces/frappe_case_management/frappe-bench && uv pip install --quiet -e /workspaces/frappe_case_management/frappe-bench/apps/frappe  --python /workspaces/frappe_case_management/frappe-bench/env/bin/python
+2026-08-16 21:20:50,885 DEBUG cd /workspaces/frappe_case_management/frappe-bench/apps/frappe && yarn install --check-files
+2026-08-16 21:22:06,775 DEBUG cd frappe-bench && bench build
+2026-08-16 21:22:07,072 INFO /home/frappe/.local/bin/bench build
+2026-08-16 21:22:29,417 LOG setting up backups
+2026-08-16 21:22:29,509 LOG backups were set up
+2026-08-16 21:22:29,509 INFO Bench frappe-bench initialized
+2026-08-16 21:27:24,782 INFO /home/frappe/.local/bin/bench set-config -g db_host mariadb
+2026-08-16 21:27:33,123 INFO /home/frappe/.local/bin/bench set-config -g redis_cache redis://redis-cache:6379
+2026-08-16 21:27:40,564 INFO /home/frappe/.local/bin/bench set-config -g redis_queue redis://redis-queue:6379
+2026-08-16 21:27:51,046 INFO /home/frappe/.local/bin/bench set-config -g redis_socketio redis://redis-queue:6379
+2026-08-16 21:28:30,958 INFO /home/frappe/.local/bin/bench new-site development.localhost
+2026-08-16 21:29:14,994 INFO /home/frappe/.local/bin/bench new-site development.localhost
+2026-08-16 21:34:31,120 INFO /home/frappe/.local/bin/bench new-app case_management
+2026-08-16 21:34:31,127 LOG creating new app case_management
+2026-08-16 21:35:45,536 LOG Installing case_management
+2026-08-16 21:35:45,537 DEBUG cd /workspaces/frappe_case_management/frappe-bench && uv pip install --quiet -e /workspaces/frappe_case_management/frappe-bench/apps/case_management  --python /workspaces/frappe_case_management/frappe-bench/env/bin/python
+2026-08-16 21:35:46,722 DEBUG bench build --app case_management
+2026-08-16 21:35:46,887 INFO /home/frappe/.local/bin/bench build --app case_management
+2026-08-16 21:36:11,776 INFO /home/frappe/.local/bin/bench start
+2026-08-16 21:36:12,998 INFO /home/frappe/.local/bin/bench watch
+2026-08-16 21:36:13,041 INFO /home/frappe/.local/bin/bench socketio
+2026-08-16 21:36:13,086 INFO /home/frappe/.local/bin/bench serve --port 8000
+2026-08-16 21:36:13,155 INFO /home/frappe/.local/bin/bench worker
+2026-08-16 21:36:13,167 INFO /home/frappe/.local/bin/bench schedule
+2026-08-16 21:39:22,223 INFO /home/frappe/.local/bin/bench use development.localhost
+2026-08-16 21:39:29,620 INFO /home/frappe/.local/bin/bench start
+2026-08-16 21:39:30,561 INFO /home/frappe/.local/bin/bench socketio
+2026-08-16 21:39:30,876 INFO /home/frappe/.local/bin/bench watch
+2026-08-16 21:39:30,914 INFO /home/frappe/.local/bin/bench schedule
+2026-08-16 21:39:30,933 INFO /home/frappe/.local/bin/bench serve --port 8000
+2026-08-16 21:39:30,999 INFO /home/frappe/.local/bin/bench worker
+2026-08-18 20:49:46,783 INFO /home/frappe/.local/bin/bench start
+2026-08-18 20:49:47,972 INFO /home/frappe/.local/bin/bench serve --port 8000
+2026-08-18 20:49:48,044 INFO /home/frappe/.local/bin/bench socketio
+2026-08-18 20:49:48,086 INFO /home/frappe/.local/bin/bench worker
+2026-08-18 20:49:48,178 INFO /home/frappe/.local/bin/bench watch
+2026-08-18 20:49:48,179 INFO /home/frappe/.local/bin/bench schedule
+2026-08-18 20:51:58,312 INFO /home/frappe/.local/bin/bench set-config -g db_host mariadb
+2026-08-18 20:52:36,788 INFO /home/frappe/.local/bin/bench use development.localhost
+2026-08-18 20:56:32,398 INFO /home/frappe/.local/bin/bench start
+2026-08-18 20:56:33,219 INFO /home/frappe/.local/bin/bench schedule
+2026-08-18 20:56:33,626 INFO /home/frappe/.local/bin/bench worker
+2026-08-18 20:56:33,663 INFO /home/frappe/.local/bin/bench socketio
+2026-08-18 20:56:33,719 INFO /home/frappe/.local/bin/bench watch
+2026-08-18 20:56:33,745 INFO /home/frappe/.local/bin/bench serve --port 8000
+2026-08-18 21:01:28,112 INFO /home/frappe/.local/bin/bench set-config -g db_host mariadb
+2026-08-18 21:06:22,391 INFO /home/frappe/.local/bin/bench start
+2026-08-18 21:06:23,298 INFO /home/frappe/.local/bin/bench serve --port 8000
+2026-08-18 21:06:23,392 INFO /home/frappe/.local/bin/bench watch
+2026-08-18 21:06:23,548 INFO /home/frappe/.local/bin/bench socketio
+2026-08-18 21:06:23,580 INFO /home/frappe/.local/bin/bench schedule
+2026-08-18 21:06:23,612 INFO /home/frappe/.local/bin/bench worker
