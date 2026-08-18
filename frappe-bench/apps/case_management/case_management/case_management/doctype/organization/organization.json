@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "field:organization_name",
+ "creation": "2026-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "organization_name",
+  "type",
+  "column_break_1",
+  "contact",
+  "location",
+  "notes"
+ ],
+ "fields": [
+  {"fieldname": "organization_name", "fieldtype": "Data", "label": "Name", "reqd": 1, "unique": 1, "in_list_view": 1},
+  {"fieldname": "type", "fieldtype": "Select", "label": "Type", "options": "Government\nNGO\nPartner\nVendor\nOther", "in_list_view": 1},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"fieldname": "contact", "fieldtype": "Data", "label": "Contact"},
+  {"fieldname": "location", "fieldtype": "Small Text", "label": "Location"},
+  {"fieldname": "notes", "fieldtype": "Text", "label": "Notes"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "Case Management",
+ "name": "Organization",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Supervisor", "read": 1, "write": 1, "create": 1, "report": 1, "export": 1},
+  {"role": "Case Officer", "read": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

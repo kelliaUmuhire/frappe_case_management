@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case",
+  "note_type",
+  "visible_to_role",
+  "column_break_1",
+  "created_by",
+  "created_on",
+  "section_break_1",
+  "content"
+ ],
+ "fields": [
+  {"fieldname": "case", "fieldtype": "Link", "label": "Case", "options": "Case", "reqd": 1, "in_standard_filter": 1, "in_list_view": 1},
+  {"fieldname": "note_type", "fieldtype": "Select", "label": "Note Type", "options": "Internal\nConfidential\nGeneral", "reqd": 1, "default": "General", "in_list_view": 1},
+  {"fieldname": "visible_to_role", "fieldtype": "Link", "label": "Visible To Role", "options": "Role", "description": "Leave blank to use the standard Case Note permission rules."},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"fieldname": "created_by", "fieldtype": "Link", "label": "Created By", "options": "User", "default": "session:user", "read_only": 1},
+  {"fieldname": "created_on", "fieldtype": "Datetime", "label": "Created On", "default": "Now", "read_only": 1},
+  {"fieldname": "section_break_1", "fieldtype": "Section Break"},
+  {"fieldname": "content", "fieldtype": "Text Editor", "label": "Content", "reqd": 1}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "Case Management",
+ "name": "Case Note",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Supervisor", "read": 1, "write": 1, "create": 1, "report": 1, "export": 1},
+  {"role": "Case Officer", "read": 1, "write": 1, "create": 1, "report": 1, "if_owner": 0}
+ ],
+ "sort_field": "created_on",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

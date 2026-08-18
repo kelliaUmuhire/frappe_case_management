@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case",
+  "activity_type",
+  "column_break_1",
+  "date",
+  "actor",
+  "section_break_1",
+  "notes",
+  "next_action",
+  "due_date"
+ ],
+ "fields": [
+  {"fieldname": "case", "fieldtype": "Link", "label": "Case", "options": "Case", "reqd": 1, "in_standard_filter": 1, "in_list_view": 1},
+  {"fieldname": "activity_type", "fieldtype": "Select", "label": "Activity Type", "options": "Call\nVisit\nEmail\nInternal Review\nAssignment Change\nStatus Change\nNote", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"fieldname": "date", "fieldtype": "Datetime", "label": "Date", "default": "Now", "in_list_view": 1},
+  {"fieldname": "actor", "fieldtype": "Link", "label": "Actor", "options": "User", "default": "session:user"},
+  {"fieldname": "section_break_1", "fieldtype": "Section Break"},
+  {"fieldname": "notes", "fieldtype": "Text", "label": "Notes"},
+  {"fieldname": "next_action", "fieldtype": "Data", "label": "Next Action"},
+  {"fieldname": "due_date", "fieldtype": "Date", "label": "Due Date"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "Case Management",
+ "name": "Case Activity",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Supervisor", "read": 1, "write": 1, "create": 1, "report": 1, "export": 1},
+  {"role": "Case Officer", "read": 1, "write": 1, "create": 1, "report": 1}
+ ],
+ "sort_field": "date",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

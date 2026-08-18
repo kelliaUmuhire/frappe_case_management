@@ -1,0 +1,144 @@
+2026-08-18 22:19:18,818 ERROR frappe Failed to capture exception
+Site: development.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 111, in capture_exception
+    set_scope(scope)
+    ~~~~~~~~~^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 67, in set_scope
+    path = frappe.request.path
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+    raise RuntimeError("object is not bound") from None
+RuntimeError: object is not bound
+2026-08-18 22:19:19,071 ERROR frappe Failed to capture exception
+Site: development.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 111, in capture_exception
+    set_scope(scope)
+    ~~~~~~~~~^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 67, in set_scope
+    path = frappe.request.path
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+    raise RuntimeError("object is not bound") from None
+RuntimeError: object is not bound
+2026-08-18 22:19:19,207 ERROR frappe Failed to capture exception
+Site: development.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 111, in capture_exception
+    set_scope(scope)
+    ~~~~~~~~~^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 67, in set_scope
+    path = frappe.request.path
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+    raise RuntimeError("object is not bound") from None
+RuntimeError: object is not bound
+2026-08-18 22:19:19,281 ERROR frappe Failed to capture exception
+Site: development.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 111, in capture_exception
+    set_scope(scope)
+    ~~~~~~~~~^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 67, in set_scope
+    path = frappe.request.path
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+    raise RuntimeError("object is not bound") from None
+RuntimeError: object is not bound
+2026-08-18 22:19:19,349 ERROR frappe Failed to capture exception
+Site: development.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 111, in capture_exception
+    set_scope(scope)
+    ~~~~~~~~~^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 67, in set_scope
+    path = frappe.request.path
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+    raise RuntimeError("object is not bound") from None
+RuntimeError: object is not bound
+2026-08-18 22:19:19,415 ERROR frappe Failed to capture exception
+Site: development.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 111, in capture_exception
+    set_scope(scope)
+    ~~~~~~~~~^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 67, in set_scope
+    path = frappe.request.path
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+    raise RuntimeError("object is not bound") from None
+RuntimeError: object is not bound
+2026-08-18 22:19:19,497 ERROR frappe Failed to capture exception
+Site: development.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 111, in capture_exception
+    set_scope(scope)
+    ~~~~~~~~~^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 67, in set_scope
+    path = frappe.request.path
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+    raise RuntimeError("object is not bound") from None
+RuntimeError: object is not bound
+2026-08-18 22:19:19,573 ERROR frappe Failed to capture exception
+Site: development.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 111, in capture_exception
+    set_scope(scope)
+    ~~~~~~~~~^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 67, in set_scope
+    path = frappe.request.path
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+    raise RuntimeError("object is not bound") from None
+RuntimeError: object is not bound
+2026-08-18 22:19:19,699 ERROR frappe Failed to capture exception
+Site: development.localhost
+Form Dict: {}
+Traceback (most recent call last):
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 111, in capture_exception
+    set_scope(scope)
+    ~~~~~~~~~^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/sentry.py", line 67, in set_scope
+    path = frappe.request.path
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 66, in __getattr__
+    return getattr(self._get_current_object(), name)
+                   ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/workspaces/frappe_case_management/frappe-bench/apps/frappe/frappe/utils/local.py", line 55, in _get_current_object
+    raise RuntimeError("object is not bound") from None
+RuntimeError: object is not bound

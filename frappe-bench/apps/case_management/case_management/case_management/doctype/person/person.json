@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "PERS-.#####",
+ "creation": "2026-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "column_break_1",
+  "date_of_birth",
+  "gender",
+  "section_break_1",
+  "contact_number",
+  "email",
+  "preferred_language",
+  "location",
+  "notes"
+ ],
+ "fields": [
+  {"fieldname": "first_name", "fieldtype": "Data", "label": "First Name", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "last_name", "fieldtype": "Data", "label": "Last Name", "in_list_view": 1},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"fieldname": "date_of_birth", "fieldtype": "Date", "label": "Date of Birth"},
+  {"fieldname": "gender", "fieldtype": "Select", "label": "Gender", "options": "Male\nFemale\nOther\nPrefer not to say"},
+  {"fieldname": "section_break_1", "fieldtype": "Section Break", "label": "Contact"},
+  {"fieldname": "contact_number", "fieldtype": "Data", "label": "Contact Number", "options": "Phone"},
+  {"fieldname": "email", "fieldtype": "Data", "label": "Email", "options": "Email"},
+  {"fieldname": "preferred_language", "fieldtype": "Select", "label": "Preferred Language", "options": "English\nFrench\nArabic\nSpanish\nOther"},
+  {"fieldname": "location", "fieldtype": "Small Text", "label": "Location"},
+  {"fieldname": "notes", "fieldtype": "Text", "label": "Notes"}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "Case Management",
+ "name": "Person",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Supervisor", "read": 1, "write": 1, "create": 1, "report": 1, "export": 1},
+  {"role": "Case Officer", "read": 1, "write": 1, "create": 1, "report": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

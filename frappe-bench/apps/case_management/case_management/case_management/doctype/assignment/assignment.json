@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "ASSIGN-.#####",
+ "creation": "2026-01-01 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "case",
+  "assigned_user",
+  "column_break_1",
+  "role",
+  "status",
+  "assignment_date"
+ ],
+ "fields": [
+  {"fieldname": "case", "fieldtype": "Link", "label": "Case", "options": "Case", "reqd": 1, "in_standard_filter": 1, "in_list_view": 1},
+  {"fieldname": "assigned_user", "fieldtype": "Link", "label": "Assigned User", "options": "User", "reqd": 1, "in_list_view": 1},
+  {"fieldname": "column_break_1", "fieldtype": "Column Break"},
+  {"fieldname": "role", "fieldtype": "Select", "label": "Role", "options": "Primary Officer\nSupervisor\nReviewer\nObserver", "reqd": 1, "default": "Primary Officer", "in_list_view": 1},
+  {"fieldname": "status", "fieldtype": "Select", "label": "Status", "options": "Active\nReassigned\nCompleted", "default": "Active", "in_list_view": 1},
+  {"fieldname": "assignment_date", "fieldtype": "Date", "label": "Assignment Date", "default": "Today", "read_only": 1}
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "module": "Case Management",
+ "name": "Assignment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Supervisor", "read": 1, "write": 1, "create": 1, "delete": 1, "report": 1, "export": 1},
+  {"role": "Case Officer", "read": 1}
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

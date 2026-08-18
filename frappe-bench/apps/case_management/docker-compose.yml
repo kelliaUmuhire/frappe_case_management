@@ -1,0 +1,151 @@
+# Production-style Docker Compose for the Case Management app.
+#
+# This runs a custom-built image (frappe framework + this app baked in,
+# via docker/apps.json and frappe_docker's official Containerfile) alongside
+# MariaDB and Redis. See docs/deployment.md for the exact build command and
+# for the reasoning behind each service.
+#
+# This is adapted from frappe_docker's well-established production layout,
+# not vendored line-for-line — if a service fails to start, cross-check
+# against https://github.com/frappe/frappe_docker for anything that has
+# moved since this was written.
+
+x-backend-image: &backend_image
+  image: case-management:latest
+
+x-depends-on-configurator: &depends_on_configurator
+  configurator:
+    condition: service_completed_successfully
+
+services:
+  mariadb:
+    image: mariadb:11.8
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-changeme}
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --skip-character-set-client-handshake
+      - --skip-innodb-read-only-compressed
+    healthcheck:
+      test: ["CMD", "mariadb-admin", "ping", "-uroot", "-p${DB_ROOT_PASSWORD:-changeme}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis-cache:
+    image: redis:alpine
+    restart: unless-stopped
+    volumes:
+      - redis-cache-data:/data
+
+  redis-queue:
+    image: redis:alpine
+    restart: unless-stopped
+    volumes:
+      - redis-queue-data:/data
+
+  configurator:
+    <<: *backend_image
+    entrypoint: ["bash", "-c"]
+    command:
+      - >
+        bench set-config -g db_host mariadb;
+        bench set-config -g redis_cache redis://redis-cache:6379;
+        bench set-config -g redis_queue redis://redis-queue:6379;
+        bench set-config -g redis_socketio redis://redis-queue:6379;
+        bench set-config -gp socketio_port 9000;
+    environment:
+      - DB_HOST=mariadb
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    depends_on:
+      mariadb:
+        condition: service_healthy
+
+  create-site:
+    <<: *backend_image
+    entrypoint: ["bash", "-c"]
+    command:
+      - >
+        wait-for-it -t 120 mariadb:3306;
+        bench new-site ${SITE_NAME:-case-management.local}
+        --mariadb-root-password ${DB_ROOT_PASSWORD:-changeme}
+        --admin-password ${ADMIN_PASSWORD:-changeme}
+        --install-app case_management
+        --set-default;
+    environment:
+      - DB_HOST=mariadb
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    depends_on:
+      <<: *depends_on_configurator
+
+  backend:
+    <<: *backend_image
+    restart: unless-stopped
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    depends_on:
+      <<: *depends_on_configurator
+
+  frontend:
+    <<: *backend_image
+    restart: unless-stopped
+    command: ["nginx-entrypoint.sh"]
+    environment:
+      BACKEND: backend:8000
+      SOCKETIO: websocket:9000
+      FRAPPE_SITE_NAME_HEADER: ${SITE_NAME:-case-management.local}
+    ports:
+      - "${HTTP_PORT:-8080}:8080"
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    depends_on:
+      - backend
+      - websocket
+
+  websocket:
+    <<: *backend_image
+    restart: unless-stopped
+    command: ["node", "/home/frappe/frappe-bench/apps/frappe/socketio.js"]
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    depends_on:
+      <<: *depends_on_configurator
+
+  queue-short:
+    <<: *backend_image
+    restart: unless-stopped
+    command: ["bench", "worker", "--queue", "short,default"]
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    depends_on:
+      <<: *depends_on_configurator
+
+  queue-long:
+    <<: *backend_image
+    restart: unless-stopped
+    command: ["bench", "worker", "--queue", "long,default"]
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    depends_on:
+      <<: *depends_on_configurator
+
+  scheduler:
+    <<: *backend_image
+    restart: unless-stopped
+    command: ["bench", "schedule"]
+    volumes:
+      - sites:/home/frappe/frappe-bench/sites
+    depends_on:
+      <<: *depends_on_configurator
+
+volumes:
+  sites:
+  mariadb-data:
+  redis-cache-data:
+  redis-queue-data:
