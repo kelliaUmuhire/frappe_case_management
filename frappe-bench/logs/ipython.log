@@ -1,4 +1,0 @@
-2026-08-18 22:19:05,846 INFO ipython === bench console session ===
-2026-08-18 22:19:05,847 INFO ipython frappe.db.exists("DocType", "Person") 
-2026-08-18 22:19:05,847 INFO ipython frappe.db.exists("Role", "Case Officer")
-2026-08-18 22:19:05,847 INFO ipython === session end ===
