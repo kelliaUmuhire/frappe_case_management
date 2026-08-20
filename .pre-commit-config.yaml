@@ -19,12 +19,14 @@ repos:
     hooks:
       - id: black
         language_version: python3.10
+        exclude: ^frappe-bench/apps/case_management/.*
 
   - repo: https://github.com/pycqa/isort
     rev: 9.0.0b2
     hooks:
       - id: isort
         language_version: python3.10
+        exclude: ^frappe-bench/apps/case_management/.*
 
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.3
