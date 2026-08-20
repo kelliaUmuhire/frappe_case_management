@@ -38,3 +38,5 @@ frappe-bench/logs/
 frappe-bench/sites/*/private/
 frappe-bench/sites/*/public/files/
 frappe-bench/sites/*/site_config.json
+
+.venv-lint
