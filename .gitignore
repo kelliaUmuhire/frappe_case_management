@@ -6,10 +6,6 @@ sites
 
 development/
 devcontainer-example/
-# !development/README.md
-# !development/installer.py
-# !development/apps-example.json
-# !development/vscode-example/
 
 # Pycharm
 .idea
@@ -33,3 +29,12 @@ node_modules
 # VitePress
 **/.vitepress/dist
 **/.vitepress/cache
+
+# Frappe runtime / generated state
+frappe-bench/config/
+frappe-bench/logs/
+
+# Local site/runtime data
+frappe-bench/sites/*/private/
+frappe-bench/sites/*/public/files/
+frappe-bench/sites/*/site_config.json
